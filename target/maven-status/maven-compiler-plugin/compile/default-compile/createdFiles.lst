@@ -1,0 +1,5 @@
+com\qa\util\TestUtil.class
+com\qa\requestBody\UserRequest.class
+com\qa\base\TestBase.class
+com\qa\client\RestClient.class
+com\qa\responseBody\UserResponse.class
