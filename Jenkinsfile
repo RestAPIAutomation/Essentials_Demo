@@ -1,23 +1,32 @@
 pipeline {
     agent any
-
+    
+    tools{
+    	maven 'LocalMaven'
+        jdk 'java1.8'
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+             	'''
+            }
+        }
     stages {
         stage ('Clean Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn clean'
-                }
+                    sh 'mvn clean install'
             }
         }
 
         stage ('Testing Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_5_0') {
                     sh 'mvn test'
                 }
-            }
         }
     }
 }
