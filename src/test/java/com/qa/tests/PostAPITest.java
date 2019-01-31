@@ -7,6 +7,8 @@ import java.util.HashMap;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -34,6 +36,16 @@ public class PostAPITest extends TestBase{
 		serviceURL = prop.getProperty("URL");
 		apiURL = prop.getProperty("serviceURL");
 		url = serviceURL + apiURL;
+		
+		
+		System.setProperty("webdriver.chrome.driver", "D://Vivek//chromedriver_win32//chromedriver.exe");
+		
+		WebDriver driver=new ChromeDriver();
+		 
+		// Open Google
+		driver.get("http://www.google.com");
+		
+		
 	}
 
 	@Test

@@ -1,0 +1,46 @@
+ PWD :  To know you are in Which directory. Which give absolute path
+
+ ls : To list what file are in directory  you are in.
+ ls -a : To list what file are in directory you are in with hidden file also
+
+ cd:  To go to directory
+ cd.. : To go back to directory 
+
+ mkdir: Create a folder or directory
+
+ rmdir: To delete directory but directory must be empty
+ rm:  To delete directory which having files in it. delete for files and direcoty
+ rm -r: To delete just directory 
+
+ touch: Use to create a file it can be any format zip file to text file
+ 
+man and --help: to konw more about command and how to use it and also show which way command can be used.
+
+cp: To copy file takes two arguments [location of file to be copies] [Where to copy]
+
+mv: To move file through command line and we can also use to rename file takes two arguments [existing file name][your choice name]
+
+locate: Is used to locate a file in linux system just like a search in windows  To ignore case we use -i argument by serach using two words
+       you can use locate -i *hello*this  use * to separate two words
+       
+echo: Echo command help us to move some data
+
+cat:  Use cat command to dispay content of the file
+
+sudo: super user do   .cif file or configuration file to modify
+
+df/ df -m: available disk space in each of the partitions in your system  
+
+du:   Use du to know the disk usage of a file in your system
+
+
+
+
+
+
+
+
+
+
+
+
