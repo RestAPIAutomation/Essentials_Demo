@@ -1,6 +1,7 @@
 pipeline {
-    agent any
-    
+    agent{
+ 		label "windows"   
+    }
     tools{
     	maven 'LocalMaven'
         jdk 'java1.8'
@@ -8,7 +9,7 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
+                bat '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
              	'''
