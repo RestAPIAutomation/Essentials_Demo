@@ -1,6 +1,5 @@
 pipeline {
     agent any
-    
     tools{
     	maven 'LocalMaven'
         jdk 'java1.8'
@@ -8,7 +7,7 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
+                bat '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
              	'''
@@ -17,15 +16,15 @@ pipeline {
         stage ('Clean Stage') {
 
             steps {
-                    sh 'mvn clean install'
+                    bat 'cd Essentials_Demo mvn clean install'
             }
         }
 
         stage ('Testing Stage') {
 
-            steps {
-                    sh 'mvn test'
-                }
+           steps {
+                    bat 'cd Essentials_Demo mvn clean install'
+            }
         }
 }
 }
