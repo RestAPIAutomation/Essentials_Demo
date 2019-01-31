@@ -1,5 +1,7 @@
 pipeline {
+
     agent any
+    
     tools{
     	maven 'LocalMaven'
         jdk 'java1.8'
