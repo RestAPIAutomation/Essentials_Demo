@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+
+    agent{
+ 		label "windows"   
+    }
+
     tools{
     	maven 'LocalMaven'
         jdk 'java1.8'
@@ -22,9 +26,9 @@ pipeline {
 
         stage ('Testing Stage') {
 
-            steps {
-                    bat 'cd Essentials_Demo mvn test'
-                }
+           steps {
+                    bat 'cd Essentials_Demo mvn clean install'
+            }
         }
 }
 }
