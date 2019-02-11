@@ -8,20 +8,11 @@ pipeline {
     }
 
     stages {
-        
-        stage ('Initialize') {
-            steps {
-                bat '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-             	'''
-            }
-        }
-        
+         
         stage ('Clean Stage') {
         
             steps {
-                    bat 'cd Essentials_Demo mvn clean install'
+                    bat 'mvn clean install'
             }
         }
 
