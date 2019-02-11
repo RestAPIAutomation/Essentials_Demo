@@ -1,8 +1,6 @@
 pipeline {
 
-    agent{
- 		label "windows"   
-    }
+    agent any
 
     tools{
     	maven 'LocalMaven'
