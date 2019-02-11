@@ -1,8 +1,10 @@
 pipeline {
+<<<<<<< HEAD
 
     agent{
  		label "windows"   
     }
+
 
     tools{
     	maven 'LocalMaven'
@@ -20,15 +22,19 @@ pipeline {
         stage ('Clean Stage') {
 
             steps {
+
                     bat 'cd Essentials_Demo mvn clean install'
+
             }
         }
 
         stage ('Testing Stage') {
 
-           steps {
-                    bat 'cd Essentials_Demo mvn clean install'
-            }
+
+            steps {
+                    bat 'mvn test'
+                }
+
         }
 }
 }
