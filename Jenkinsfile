@@ -12,7 +12,7 @@ pipeline {
         stage ('Clean Stage') {
         
             steps {
-            		sh 'mvn --version'	
+            		bat 'mvn --version'	
                     bat 'mvn clean install'
             }
         }
