@@ -1,5 +1,19 @@
 Manifest-Version: 1.0
 Built-By: vparmar
+Class-Path: maven-invoker-2.1.1.jar plexus-utils-3.0.8.jar plexus-comp
+ onent-annotations-1.5.5.jar selenium-java-3.14.0.jar selenium-api-3.1
+ 4.0.jar selenium-chrome-driver-3.14.0.jar selenium-edge-driver-3.14.0
+ .jar selenium-firefox-driver-3.14.0.jar selenium-ie-driver-3.14.0.jar
+  selenium-opera-driver-3.14.0.jar selenium-remote-driver-3.14.0.jar s
+ elenium-safari-driver-3.14.0.jar selenium-support-3.14.0.jar byte-bud
+ dy-1.8.15.jar commons-exec-1.3.jar commons-codec-1.10.jar commons-log
+ ging-1.2.jar guava-25.0-jre.jar jsr305-1.3.9.jar checker-compat-qual-
+ 2.0.0.jar error_prone_annotations-2.1.3.jar j2objc-annotations-1.1.ja
+ r animal-sniffer-annotations-1.14.jar okhttp-3.10.0.jar okio-1.14.1.j
+ ar testng-6.14.3.jar jcommander-1.72.jar bsh-2.0b6.jar httpclient-4.5
+ .5.jar httpcore-4.4.6.jar json-20180813.jar jackson-databind-2.9.6.ja
+ r jackson-annotations-2.9.0.jar jackson-core-2.9.6.jar
 Build-Jdk: 1.8.0_191
 Created-By: Maven Integration for Eclipse
+Main-Class: com.qa.base.TestBase
 

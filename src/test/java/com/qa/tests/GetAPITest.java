@@ -14,10 +14,10 @@ import org.testng.annotations.Test;
 import com.qa.base.TestBase;
 import com.qa.client.RestClient;
 
-import junit.framework.Assert;
+
 
 public class GetAPITest extends TestBase {
-
+	
 	TestBase testBase;
 	RestClient restClient;
 	String serviceURL;
@@ -25,15 +25,15 @@ public class GetAPITest extends TestBase {
 	String apiURL;
 	CloseableHttpResponse closeableHttpResponse;
 
-	@BeforeMethod
-	public void setUp() throws ClientProtocolException, IOException {
-
-		testBase = new TestBase();
-		serviceURL = prop.getProperty("URL");
-		apiURL = prop.getProperty("serviceURL");
-		url = serviceURL + apiURL;
-
-	}
+//	@BeforeMethod
+//	public void setUp() throws ClientProtocolException, IOException {
+//
+//		testBase = new TestBase();
+//		serviceURL = prop.getProperty("URL");
+//		apiURL = prop.getProperty("serviceURL");
+//		url = serviceURL + apiURL;
+//
+//	}
 
 	@Test
 	public void getAPITest() throws ClientProtocolException, IOException {
@@ -42,7 +42,7 @@ public class GetAPITest extends TestBase {
 		
 		// a. status Code
 		int statusCode = closeableHttpResponse.getStatusLine().getStatusCode();
-		Assert.assertEquals(RESPONSE_STATUS_CODE_200,statusCode);
+		org.testng.Assert.assertEquals(RESPONSE_STATUS_CODE_200,statusCode);
 		
 		System.out.println(statusCode);
 

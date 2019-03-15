@@ -1,0 +1,24 @@
+1) To Get version of Docker  ->    docker --version
+
+2) To Run image  -> docker run hello-world
+
+3) To list out all the available images in the systems   -> docker images
+
+4) To pull images from the docker hub to local repository -> docker pull [image name]
+
+5) To Run image which create container from that image -> docker run -it -d [image name] 
+
+6) To list out all the containers  -> docker ps -a
+
+7) To logged in to the docker  -> docker login
+
+8) To perform commands in containers -> docker exec -it [container ID] bash
+
+9) To perform start and stop opration on container  -> docker start/stop [container ID]
+
+10) To delete container -> docker rm -f [container ID]
+
+11) To get more info -> docker info
+
+12) 
+

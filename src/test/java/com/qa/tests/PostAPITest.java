@@ -32,11 +32,13 @@ public class PostAPITest extends TestBase{
 
 	@BeforeMethod
 	public void setUp() throws ClientProtocolException, IOException {
-		testBase = new TestBase();
+	
+		testBase = new TestBase();		
 		serviceURL = prop.getProperty("URL");
 		apiURL = prop.getProperty("serviceURL");
 		url = serviceURL + apiURL;
 		
+		//System.setProperty("webdriver.chrome.driver", "//usr//local//service//chromedriver");
 		
 		System.setProperty("webdriver.chrome.driver", "D://Vivek//chromedriver_win32//chromedriver.exe");
 		
@@ -44,7 +46,6 @@ public class PostAPITest extends TestBase{
 		 
 		// Open Google
 		driver.get("http://www.google.com");
-		
 		
 	}
 
